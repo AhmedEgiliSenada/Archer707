@@ -1,0 +1,159 @@
+/* ---------------------------------- */
+/* 1. التنسيق العام والـ Header الموحد */
+/* ---------------------------------- */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    text-align: right;
+}
+
+header {
+    background-color: #333; /* لون هادئ لشريط التنقل */
+    color: white;
+    padding: 20px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* تنسيق عداد السلة (الرقم الأحمر) */
+#cart-count {
+    background-color: #e74c3c; 
+    color: white;
+    padding: 4px 10px;
+    border-radius: 15px; 
+    font-size: 1em;
+    font-weight: bold;
+    margin-left: 10px;
+    display: inline-block;
+    min-width: 25px;
+    text-align: center;
+}
+
+/* تنسيق أزرار التنقل (تفاصيل الدفع والسلة) - شكل بسيط وأنيق */
+.nav-button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 18px;
+    text-decoration: none;
+    border-radius: 5px; /* حواف بسيطة */
+    transition: background-color 0.3s;
+    font-weight: bold;
+    margin-right: 10px;
+    display: inline-block;
+}
+
+.nav-button:hover {
+    background-color: #0056b3;
+}
+
+/* ---------------------------------- */
+/* 2. تنسيق بطاقات المنتجات (لضمان الجمال والتناسق) */
+/* ---------------------------------- */
+
+.product-grid {
+    display: flex; 
+    flex-wrap: wrap; 
+    justify-content: center; 
+    padding: 30px 20px;
+    gap: 30px;
+}
+
+.product-card {
+    /* توحيد الأبعاد والشكل */
+    width: 250px; 
+    min-height: 400px; 
+    display: flex; 
+    flex-direction: column;
+    justify-content: space-between; 
+    
+    background-color: #ffffff;
+    border: none;
+    border-radius: 8px; /* حواف معتدلة */
+    padding: 20px; 
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* ظل معتدل */
+    transition: transform 0.3s;
+}
+
+.product-card:hover {
+    transform: translateY(-5px); 
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.15); 
+}
+
+.product-card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 4px;
+    margin-bottom: 15px;
+    object-fit: contain;
+}
+
+.product-card h2 {
+    font-size: 1.3em;
+    color: #333;
+    margin-top: 5px;
+}
+
+.price {
+    font-size: 1.6em;
+    color: #e67e22; /* لون برتقالي للسعر */
+    margin: 10px 0 20px;
+    font-weight: bold;
+}
+
+/* تنسيق زر الإضافة (Add to Cart) - بسيط وجذاب */
+.add-to-cart {
+    width: 100%; 
+    background-color: #2ecc71; /* لون أخضر جذاب */
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px; /* حواف بسيطة */
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: bold;
+    transition: background-color 0.3s;
+    margin-top: auto;
+}
+
+.add-to-cart:hover {
+    background-color: #27ae60;
+}
+
+/* ---------------------------------- */
+/* 3. تنسيق قسم ملخص سلة التسوق (لا يزال موحداً) */
+/* ---------------------------------- */
+#cart-summary {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 30px;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    text-align: right;
+}
+
+#cart-summary h2, #cart-summary h3 {
+    border-bottom: 2px solid #007bff;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+.cart-item {
+    padding: 10px 0;
+    border-bottom: 1px dashed #eee;
+}
+
+#checkout-button {
+    background-color: #2980b9;
+    color: white;
+    border: none;
+    padding: 12px 30px;
+    border-radius: 8px;
+    cursor:
+
